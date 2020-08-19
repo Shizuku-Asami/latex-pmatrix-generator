@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaTeX pmatrix generator</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <script src="pmatrix.js"></script>
+    <label for="row">number of rows: </label>
+    <input name="row" type="number" id="row">
+    <label for="column">number of columns: </label>
+    <input name="column" type="number" id="column">
+    <label for="symbol">symbol: </label>
+    <input name="symbol" type="text" id="symbol">
+    <button type="submit" onclick="outputResult()">Generate</button>
+    <p id="result">
+        Result will show here.
+    </p>
+    <script>
+        function outputResult() {
+            document.getElementById('result').innerHTML = '\\[ ' + pmatrix(document.getElementById('row').value,document.getElementById('column').value,document.getElementById('symbol').value) + '\\]'
+        }
+    </script>
+</body>
+</html>
