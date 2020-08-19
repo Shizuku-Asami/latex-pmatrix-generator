@@ -1,6 +1,6 @@
 function pmatrix(row, column, symbol) {
     let array = [];
-    if (symbol === '') {
+    if (symbol === '' || symbol === undefined) {
         for (let i = 0; i < row; i++) {
             array[i] = [];
             for (let j = 0; j < column; j++) {
