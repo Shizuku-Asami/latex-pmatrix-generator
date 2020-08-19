@@ -33,3 +33,4 @@ function pmatrix(row, column, symbol) {
 }
 
 // console.log(pmatrix(8, 5, 'A'));
+// console.log(pmatrix(8, 5));
