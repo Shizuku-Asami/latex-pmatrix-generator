@@ -32,4 +32,4 @@ function pmatrix(row, column, symbol) {
     return string;
 }
 
-console.log(pmatrix(8, 5, 'A'));
+// console.log(pmatrix(8, 5, 'A'));
